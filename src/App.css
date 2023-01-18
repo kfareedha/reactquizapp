@@ -109,3 +109,108 @@ h3 {
 .red {
   background-color: red;
 }
+@media only screen and (max-width: 600px) {
+  .Start {
+    width: 400px;
+    height: 500px;
+    border-radius: 5px;
+  }
+  .Start input {
+    width: 300px;
+    height: 40px;
+    margin: 5px;
+
+    border-radius: 15px;
+    font-size: 15px;
+  }
+  .Menu {
+    width: 300px;
+    height: 500px;
+    border-radius: 5px;
+  }
+
+  .Menu button {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+
+    border-radius: 80px;
+    font-size: 15px;
+  }
+  button {
+    width: 200px;
+    height: 40px;
+    margin: 5px;
+    border: none;
+
+    border-radius: 20px;
+    font-size: 15px;
+  }
+  .Quiz {
+    width: 300px;
+    height: 500px;
+    border-radius: 5px;
+  }
+  .questions {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .End {
+    width: 300px;
+    height: 500px;
+    border-radius: 5px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .Start {
+    width: 600px;
+    height: 500px;
+    border-radius: 10px;
+  }
+  .Start input {
+    width: 400px;
+    height: 50px;
+    margin: 5px;
+  }
+  .Menu {
+    width: 600px;
+    height: 500px;
+    border-radius: 5px;
+  }
+
+  .Menu button {
+    width: 100px;
+    height: 80px;
+    margin: 5px;
+
+    border-radius: 80px;
+    font-size: 15px;
+  }
+  button {
+    width: 250px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+
+    border-radius: 25px;
+    font-size: 18px;
+  }
+  .Quiz {
+    width: 600px;
+    height: 500px;
+    border-radius: 5px;
+    background-color: black;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+  .End {
+    width: 600px;
+    height: 500px;
+    border-radius: 5px;
+  }
+}

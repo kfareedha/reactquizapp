@@ -20,6 +20,7 @@ const End = () => {
       <h2>
         {score} correct Answers/ {limit}
       </h2>
+      <h2>{(score / limit) * 100} %</h2>
       <button onClick={restartQuiz}>Take once more</button>
     </div>
   );
