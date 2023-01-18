@@ -13,6 +13,7 @@ const Start = () => {
         <h3>Enter Your Name to start</h3>
       </label>
       {error && <span style={{ color: "red" }}>{error}</span>}
+
       <input
         required
         type="text"
@@ -20,6 +21,7 @@ const Start = () => {
         placeholder="Please Enter Your Name"
         name="name"
         onChange={(event) => {
+          setError("");
           setUserName(event.target.value);
         }}
       />

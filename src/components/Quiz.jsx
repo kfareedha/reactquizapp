@@ -1,16 +1,16 @@
 import "../App.css";
 import { Questions } from "../helpers/Questions";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 import { useContext } from "react";
 import { QuizStateContext } from "../helpers/Context";
 
 function Quiz() {
   const [questions, setQuestions] = useState([]);
-  const optionA = useRef();
-  const optionB = useRef();
-  const optionC = useRef();
-  const optionD = useRef();
+  // const optionA = useRef();
+  // const optionB = useRef();
+  // const optionC = useRef();
+  // const optionD = useRef();
   useEffect(() => {
     shuffle(Questions);
     setQuestions(JSON.parse(localStorage.getItem("Questions")) || null);
@@ -26,13 +26,13 @@ function Quiz() {
   const [disabled, setDisabled] = useState(false);
   const [color, setcolor] = useState(null);
 
-  const { score, setScore, QuizState, setQuizState, limit, setLimit } =
+  const { score, setScore, QuizState, setQuizState, limit } =
     useContext(QuizStateContext);
 
   function shuffle(array) {
     array.sort(() => Math.random() - 0.5);
   }
-  const arr = [optionA, optionB, optionC, optionD];
+  // const arr = [optionA, optionB, optionC, optionD];
 
   const chooseOption = (option, index) => {
     setDisabled(true);
